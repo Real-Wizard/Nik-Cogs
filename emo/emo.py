@@ -2,13 +2,13 @@
 from discord.ext import commands
 import asyncio
 
-class art:
+class Emo:
     """lul"""
     def __init__(self, bot):
     	self.bot = bot
 
     @commands.command(pass_context=True)
-    async def art(self, ctx, times : int=None):
+    async def emo(self, ctx, times : int=None):
         """\U00000028 \U00000361\U000000b0 \U0000035c\U00000296 \U00000361\U000000b0\U00000029"""
         if times == None:
             times = 1
@@ -34,7 +34,7 @@ class art:
             counter = counter + 1
 
 def setup(bot):
-	bot.add_cog(Art(bot))
+	bot.add_cog(Emo(bot))
 
 
 
