@@ -14,12 +14,12 @@ class Emo:
             times = 1
         elif times > 50:
             times = 50
-        delay = ((times * 1.00 / 10) + 0.3)
+        delay = ((times * 1.00 / 10) + 0.9)
         counter = 0
         while counter < times:
             await self.bot.edit_message(ctx.message, ':kissing_closed_eyes:  :flushed: ')
             await asyncio.sleep(delay)
-            await self.bot.edit_message(ctx.message, ':kissinf_heart:  :heart_eyes:')
+            await self.bot.edit_message(ctx.message, ':kissing_heart:  :heart_eyes:')
             await asyncio.sleep(delay)
             await self.bot.edit_message(ctx.message, ':smiling_imp::knife:  :scream:')
             await asyncio.sleep(delay)
